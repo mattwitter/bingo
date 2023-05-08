@@ -2,11 +2,11 @@
   <v-container fluid>
     <v-col>
       <v-row>
-          <v-card class="card">
+          <v-card class="card" @click="moreInfo('seeds')">
             <v-img
               src="../../assets/seeds.png"
             >
-            </v-img>
+          </v-img>
           </v-card>
           <v-card class="card">
             <v-img
@@ -21,9 +21,10 @@
             </v-img>
           </v-card>
           <v-card class="card">
-            <v-card-text>
-              test
-            </v-card-text>
+            <v-img
+              src="../../assets/sceptre.png"
+            >
+            </v-img>
           </v-card>
       </v-row>
       <v-row>
@@ -97,9 +98,21 @@
 </template>
 
 <script>
-export default ({
+export default {
   name: "BingoCard",
-})
+  //state
+  card: null,
+
+  data: () => ({
+
+  }),
+
+  methods: {
+    moreInfo(card) {
+      console.log(card)
+    }
+  }
+}
 </script>
 
 <style>
