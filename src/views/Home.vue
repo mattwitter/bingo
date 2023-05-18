@@ -4,10 +4,10 @@
       <v-container fluid>
         <v-row>
           <v-col cols="12">
-            <h2 class="runescape top jumbo" style="text-align: center;">
+            <h2 class="ml-12 mr-n12 runescape top jumbo" style="text-align: center;">
               Unmerged Bingo
               <v-btn
-                class="mr-1 mt-5 pt-2 pb-1 runescape"
+                class="mr-12 mt-5 pt-2 pb-1 runescape"
                 height="10%"
                 color="grey"
                 style="color:#ffff00; float: right; font-size: 3rem;"
@@ -42,8 +42,8 @@
 
         <v-row>
           <v-col cols="12">
-            <h2 class="mr-10 runescape jumbo" style="text-align: center; font-size: 3rem;">
-              Bingo Code: hi
+            <h2 class="mr-12 ml-n12 runescape jumbo" style="text-align: center; font-size: 3rem;">
+              Bingo Code: TBA
             </h2>
           </v-col>
         </v-row>
@@ -60,7 +60,7 @@
                   
                 </v-expansion-panel-header>
                 <v-expansion-panel-content
-                  v-for="(item,i) in 4"
+                  v-for="(item,i) in 5"
                   :key="i"
                   class=""
                 >
@@ -77,7 +77,7 @@
                   {{ team2.team_name + ' - ' + team2Score}}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content
-                  v-for="(item,i) in 4"
+                  v-for="(item,i) in 5"
                   :key="i"
                   class=""
                 >
@@ -94,7 +94,7 @@
                   {{ team3.team_name + ' - ' + team3Score}}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content
-                  v-for="(item,i) in 4"
+                  v-for="(item,i) in 5"
                   :key="i"
                   class=""
                 >
@@ -111,7 +111,7 @@
                   {{ team4.team_name + ' - ' + team4Score}}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content
-                  v-for="(item,i) in 4"
+                  v-for="(item,i) in 5"
                   :key="i"
                   class=""
                 >
