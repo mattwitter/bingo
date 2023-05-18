@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Bingo Home',
+    name: 'Unmerged Bingo',
     component: Home,
   }
 ]
