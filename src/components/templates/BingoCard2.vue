@@ -135,7 +135,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Dragon Pickaxe</h4>
+                <h4>Obtain a Dragon Pickaxe (Not from Volanic Mine)</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
@@ -185,7 +185,7 @@
               </v-card-text>
             </v-card>
           </v-dialog>
-          
+
       </v-row>
       <v-row>
       </v-row>

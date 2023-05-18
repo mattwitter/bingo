@@ -307,6 +307,10 @@ export default {
       else
       {
         this.disabled1 = 0
+        this.tier1 = false,
+        this.tier2 = false,
+        this.tier3 = false,
+        this.tier4 = false
       }
     },
 
@@ -318,6 +322,10 @@ export default {
       else
       {
         this.disabled2 = 0
+        this.tier1 = false,
+        this.tier2 = false,
+        this.tier3 = false,
+        this.tier4 = false
       }
     },
 
@@ -329,6 +337,10 @@ export default {
       else
       {
         this.disabled3 = 0
+        this.tier1 = false,
+        this.tier2 = false,
+        this.tier3 = false,
+        this.tier4 = false
       }
     },
 
@@ -340,6 +352,10 @@ export default {
       else
       {
         this.disabled4 = 0
+        this.tier1 = false,
+        this.tier2 = false,
+        this.tier3 = false,
+        this.tier4 = false
       }
     },
 

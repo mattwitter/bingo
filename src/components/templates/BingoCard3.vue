@@ -21,7 +21,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a 3x Zulrah Unique</h4>
+                <h4>Obtain a 3x Zulrah Unique (No Pet/Mutagen/Jar)</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
@@ -44,7 +44,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Complete an Odium or Malediction Ward</h4>
+                <h4>Complete an Odium or Malediction Ward (Must Complete 1 Full Shield)</h4>
               </v-card-text>
             </v-card>
           </v-dialog>

@@ -67,7 +67,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Nightmare Unique (No Pet/No Tablet)</h4>
+                <h4>Obtain a Nightmare Unique (No Pet/No Tablet/Parasitic Egg)</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
