@@ -507,7 +507,7 @@ export default {
 
     this.team4 = {
       team_name: "Thurgo's Thotties",
-      members: ["Bridgebon", "Gamer fuel", "Sycrem", "Some Guy"],
+      members: ["Bridgebon", "Gamer fuel", "Sycrem", "Are Dry"],
       completedTiles: [this.mystery = false, this.lockpick = false, this.thread = false, this.pureEss = false, this.bracelet = false, this.fireCape = false, this.gnomeScarf = false, this.dragonMed = false, this.seerCull = false, this.zenyte = false, this.venator = false, this.dpick = false, this.vorkathHead = false, this.saraSwordLight = false, this.zulrah = false, this.odiumMalediction = false, this.wardRing = false, this.crystalSeed = false, this.coxPrayer = false, this.holyElixir = false, this.zammy = false, this.bandosArmaArmour = false, this.gwdHilt = false, this.barrows = false, this.acb = false, this.bloodShard = false, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
     }
   }
