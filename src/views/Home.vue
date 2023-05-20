@@ -32,7 +32,9 @@
                       Players found logged into multiple accounts at once for the duration of bingo will be disqualified. 
                     </h4>
                     <h4 class="pt-5 rules">6. Alts may be used to run supplies, but may not be used to aid in the completion of any tile for any reason (Tanking, Safespotting, etc.)</h4>
-                    <h4 class="pt-5 rules">7. Any Players not actively participating in the event may be removed from the team at mods discretion.</h4>
+                    <h4 class="pt-5 rules">7. Please turn untradeable drop notifications on and set your valuable drop notification threshold to very low.</h4>
+                    <h4 class="pt-5 rules">8. All drops must be submitted within one hour of receiving the drop (other than for the barrows tile), and that if your team captain is online they should approve your screenshot before you submit it.</h4>
+                    <h4 class="pt-5 rules">9. Any Players not actively participating in the event may be removed from the team at mods discretion.</h4>
                   </v-card-text>
                 </v-card>
               </v-dialog>
