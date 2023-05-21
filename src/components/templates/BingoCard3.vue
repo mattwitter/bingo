@@ -183,7 +183,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain Bandos/Arma Top AND Bottom (1 top/1 bottom, does not need to match)</h4>
+                <h4>2x Obtain Bandos/Arma Top/Bottom (2x Top, Bottom, Or 1 of each, does not need to match)</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
