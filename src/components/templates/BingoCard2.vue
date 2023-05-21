@@ -66,7 +66,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Mud Battlestaff or a Seercull from Dagannoth Kings</h4>
+                <h4>Obtain a Mud Battlestaff AND a Seercull from Dagannoth Kings</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
