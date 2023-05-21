@@ -20,7 +20,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>A mysterious tile of mysterious mysteries</h4>
+                <h4>Uh Oh! Little lumbridge cow needs her milkers milkied! Watch out! Bring your whole team and screenshot one LUCKY team member getting that milky wilky and make sure everyone elses names are visible! One bonus point will be awarded to the team with the creamiest fashionscape!</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
