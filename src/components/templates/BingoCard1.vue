@@ -5,7 +5,7 @@
           <v-card class="card" @click="dialog1 = true">
             <v-img
               v-if="!completedTiles[0]"
-              src="../../assets/mystery.png"
+              src="../../assets/miilkers.png"
             >
           </v-img>
           <v-img

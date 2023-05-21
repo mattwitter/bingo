@@ -45,7 +45,7 @@
         <v-row>
           <v-col cols="12">
             <h2 class="mr-12 ml-n12 runescape jumbo" style="text-align: center; font-size: 3rem;">
-              Bingo Code: TBA
+              Bingo Code: Milkers
             </h2>
           </v-col>
         </v-row>
