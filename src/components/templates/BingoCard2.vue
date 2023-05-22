@@ -97,7 +97,7 @@
           <v-card class="card" @click="dialog5 = true">
             <v-img
               v-if="!completedTiles[10]"
-              src="../../assets/venatorShard.png"
+              src="../../assets/venatorShard2.png"
             >
             </v-img>
             <v-img
