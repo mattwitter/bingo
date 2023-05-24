@@ -234,7 +234,7 @@ export default {
     tier3: false,
     tier4: false,
     team1Score: 35,
-    team2Score: 26,
+    team2Score: 31,
     team3Score: 32,
     team4Score: 40,
 
@@ -498,7 +498,7 @@ export default {
     this.team2 = {
       team_name: "DASG Whorehouse",
       members: [":Dacoyda:", "Thicc Six", "Renting a gf", "HighAlchemist", "l glizzy l"],
-      completedTiles: [this.mystery = false, this.lockpick = false, this.thread = false, this.pureEss = true, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = false, this.seerCull = true, this.zenyte = true, this.venator = false, this.dpick = true, this.vorkathHead = false, this.saraSwordLight = false, this.zulrah = false, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = false, this.coxPrayer = false, this.holyElixir = false, this.zammy = false, this.bandosArmaArmour = true, this.gwdHilt = false, this.barrows = true, this.acb = false, this.bloodShard = false, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
+      completedTiles: [this.mystery = false, this.lockpick = false, this.thread = false, this.pureEss = true, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = false, this.seerCull = true, this.zenyte = true, this.venator = false, this.dpick = true, this.vorkathHead = false, this.saraSwordLight = false, this.zulrah = false, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = false, this.coxPrayer = false, this.holyElixir = false, this.zammy = false, this.bandosArmaArmour = true, this.gwdHilt = false, this.barrows = true, this.acb = false, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
     },
 
     this.team3 = {
