@@ -235,7 +235,7 @@ export default {
     tier4: false,
     team1Score: 60,
     team2Score: 57,
-    team3Score: 46,
+    team3Score: 51,
     team4Score: 66,
 
     disabled1: 0,
@@ -504,7 +504,7 @@ export default {
     this.team3 = {
       team_name: "Existential Confirmation",
       members: ["Dun", "Britster34", "Lossow", "I am budcode", "Wake"],
-      completedTiles: [this.mystery = false, this.lockpick = true, this.thread = false, this.pureEss = true, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = true, this.seerCull = true, this.zenyte = false, this.venator = false, this.dpick = true, this.vorkathHead = true, this.saraSwordLight = true, this.zulrah = true, this.odiumMalediction = false, this.wardRing = false, this.crystalSeed = true, this.coxPrayer = false, this.holyElixir = true, this.zammy = false, this.bandosArmaArmour = false, this.gwdHilt = true, this.barrows = true, this.acb = false, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
+      completedTiles: [this.mystery = false, this.lockpick = true, this.thread = false, this.pureEss = true, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = true, this.seerCull = true, this.zenyte = false, this.venator = false, this.dpick = true, this.vorkathHead = true, this.saraSwordLight = true, this.zulrah = true, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = true, this.coxPrayer = false, this.holyElixir = true, this.zammy = false, this.bandosArmaArmour = false, this.gwdHilt = true, this.barrows = true, this.acb = false, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
     },
 
     this.team4 = {
