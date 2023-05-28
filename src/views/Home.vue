@@ -233,7 +233,7 @@ export default {
     tier2: false,
     tier3: false,
     tier4: false,
-    team1Score: 60,
+    team1Score: 61,
     team2Score: 57,
     team3Score: 51,
     team4Score: 66,
@@ -492,7 +492,7 @@ export default {
    this.team1 = {
       team_name: "Nieve's Naughty Boys",
       members: ["B1G J0HN", "Miilky", "Ya_Boy_Pappy", "He was NR1", "PapaPink"],
-      completedTiles: [this.mystery = false, this.lockpick = true, this.thread = true, this.pureEss = this, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = true, this.seerCull = true, this.zenyte = false, this.venator = true, this.dpick = false, this.vorkathHead = true, this.saraSwordLight = false, this.zulrah = true, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = true, this.coxPrayer = true, this.holyElixir = false, this.zammy = true, this.bandosArmaArmour = true, this.gwdHilt = false, this.barrows = true, this.acb = true, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
+      completedTiles: [this.mystery = true, this.lockpick = true, this.thread = true, this.pureEss = this, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = true, this.seerCull = true, this.zenyte = false, this.venator = true, this.dpick = false, this.vorkathHead = true, this.saraSwordLight = false, this.zulrah = true, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = true, this.coxPrayer = true, this.holyElixir = false, this.zammy = true, this.bandosArmaArmour = true, this.gwdHilt = false, this.barrows = true, this.acb = true, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
     },
     
     this.team2 = {
