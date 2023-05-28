@@ -4,7 +4,7 @@
         <v-col cols="12" style="background-color: black;">
           <div>
             <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
-            <h2 class="runescape jumbo">THURGO'S THOTTIES WIN</h2>
+            <h2 class="runescape jumbo" style="text-align: center;  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">THURGO'S THOTTIES WIN</h2>
           </div>
         </v-col>
     </v-container>
