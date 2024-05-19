@@ -4,7 +4,8 @@
         <v-col cols="12" style="background-color: black;">
           <div>
             <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
-            <h2 class="runescape jumbo" style="text-align: center;  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">THURGO'S THOTTIES WIN</h2>
+            <h1 class="runescape jumbo" style="text-align: center;  position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Unmerged Bingo</h1>
+            <h1 class="runescape jumbo" style="text-align: center;  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">June 21st - June 23rd</h1>
           </div>
         </v-col>
     </v-container>
@@ -27,7 +28,7 @@ export default {
   }),
 
   mounted() {
-  this.triggerConfetti();
+  //this.triggerConfetti();
   },
 
   methods: {
@@ -46,6 +47,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Runescape UF";
+  src: url(https://github.com/runelite/runelite/blob/master/runelite-client/src/main/resources/net/runelite/client/ui/runescape.ttf) format("truetype");
+}
+
 .runescape {
   font-family: 'RuneScape UF';
   color: #ffff00;
