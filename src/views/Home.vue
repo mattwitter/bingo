@@ -1,12 +1,12 @@
 <template>
   <v-app style="background-color: black;">
-    <v-container>
+    <v-container class="container">
       <v-col xl="12" md="6" sm="3" style="background-color: black;">
-        <div>
+        <div class="content">
           <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
-          <h1 class="runescape jumbo" style="text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Unmerged Bingo</h1>
-          <h1 class="runescape jumbo" style="text-align: center; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">June 21st - June 23rd</h1>
-          <h1 class="runescape" style="text-align: center; position: absolute; top: 47%; left: 50%; transform: translate(-50%, -50%);">5:00 PM EST - 11:59 PM EST</h1>
+          <h1 class="runescape jumbo" style="text-align: center;">Unmerged Bingo</h1>
+          <h2 class="runescape jumbo subtitle" style="text-align: center;">June 21st - June 23rd</h2>
+          <h3 class="runescape" style="text-align: center;">5:00 PM EST - 11:59 PM EST</h3>
         </div>
       </v-col>
     </v-container>
@@ -51,12 +51,30 @@ export default {
   text-align: center;
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take full viewport height */
+}
+
+.content {
+  text-align: center; /* Center content inside the div */
+}
+
 .rules {
   text-align: left;
   line-height: 1.02;
   font-size: 2rem;
 }
 
+.title {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 3rem;
+}
 .top {
   margin-top: 0px;
 }
