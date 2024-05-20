@@ -13,10 +13,40 @@
   </v-app>
 </template>
 
+<script>
+import confetti from 'canvas-confetti';
+
+export default {
+  name: 'Home',
+  components: {},
+  data: () => ({}),
+  mounted() {
+    //this.triggerConfetti();
+  },
+  methods: {
+    triggerConfetti() {
+      const canvas = document.getElementById('confetti-canvas');
+      confetti.create(canvas, {
+        resize: true,
+        useWorker: true,
+      })({ particleCount: 200, spread: 200 });
+    },
+  },
+  created() {
+    //this.showTeamBoard()
+  },
+}
+</script>
+
 <style>
-/* Common styles for all screen sizes */
+@font-face {
+  font-family: 'Runescape UF';
+  src: url('../assets/fonts/runescape.ttf') format('truetype');
+}
+
 .runescape {
-  font-family: 'Runescape UF', sans-serif;
+  font-family: 'Runescape UF';
+  font-weight: bold;
   color: #ffff00;
   text-align: center;
 }
@@ -35,6 +65,10 @@
   font-size: 6rem;
   line-height: 1.02;
   font-weight: 500;
+}
+
+.teamname {
+  font-size: 2rem;
 }
 
 .confetti-canvas {
