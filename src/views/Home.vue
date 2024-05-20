@@ -6,47 +6,17 @@
           <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
           <h1 class="runescape jumbo" style="text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Unmerged Bingo</h1>
           <h1 class="runescape jumbo" style="text-align: center; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">June 21st - June 23rd</h1>
-          <h1 class="runescape" style="text-align: center; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);">5:00 PM EST - 11:59 PM EST</h1>
+          <h1 class="runescape" style="text-align: center; position: absolute; top: 47%; left: 50%; transform: translate(-50%, -50%);">5:00 PM EST - 11:59 PM EST</h1>
         </div>
       </v-col>
     </v-container>
   </v-app>
 </template>
 
-<script>
-import confetti from 'canvas-confetti';
-
-export default {
-  name: 'Home',
-  components: {},
-  data: () => ({}),
-  mounted() {
-    //this.triggerConfetti();
-  },
-  methods: {
-    triggerConfetti() {
-      const canvas = document.getElementById('confetti-canvas');
-      confetti.create(canvas, {
-        resize: true,
-        useWorker: true,
-      })({ particleCount: 200, spread: 200 });
-    },
-  },
-  created() {
-    //this.showTeamBoard()
-  },
-}
-</script>
-
 <style>
-@font-face {
-  font-family: 'Runescape UF';
-  src: url('../assets/fonts/runescape.ttf') format('truetype');
-}
-
+/* Common styles for all screen sizes */
 .runescape {
-  font-family: 'Runescape UF';
-  font-weight: bold;
+  font-family: 'Runescape UF', sans-serif;
   color: #ffff00;
   text-align: center;
 }
@@ -67,10 +37,6 @@ export default {
   font-weight: 500;
 }
 
-.teamname {
-  font-size: 2rem;
-}
-
 .confetti-canvas {
   position: fixed;
   top: 0;
@@ -79,5 +45,20 @@ export default {
   height: 100%;
   z-index: 9999;
   pointer-events: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .jumbo {
+    font-size: 4rem; /* Adjust font size for smaller screens */
+  }
+  .runescape {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+  /* Adjust positioning for smaller screens */
+  .jumbo,
+  .runescape {
+    top: 50%;
+  }
 }
 </style>
