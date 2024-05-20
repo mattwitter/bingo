@@ -4,8 +4,9 @@
       <v-col cols="12" style="background-color: black;">
         <div>
           <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
-          <h1 class="runescape jumbo" style="text-align: center;  position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Unmerged Bingo</h1>
-          <h1 class="runescape jumbo" style="text-align: center;  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">June 21st - June 23rd</h1>
+          <h1 class="runescape jumbo" style="text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Unmerged Bingo</h1>
+          <h1 class="runescape jumbo" style="text-align: center; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">June 21st - June 23rd</h1>
+          <h1 class="runescape" style="text-align: center; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);">5:00 PM EST - 11:59 PM EST</h1>
         </div>
       </v-col>
     </v-container>
@@ -38,21 +39,25 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.cdnfonts.com/css/runescape-uf');
+@font-face {
+  font-family: 'Runescape UF';
+  src: url('../assets/fonts/runescape.ttf') format('truetype');
+}
 
 .runescape {
-  font-family: 'RuneScape UF', sans-serif;
+  font-family: 'Runescape UF';
+  font-weight: bold;
   color: #ffff00;
   text-align: center;
-}     
+}
 
 .rules {
-  text-align: left; 
-  line-height: 1.02; 
+  text-align: left;
+  line-height: 1.02;
   font-size: 2rem;
 }
 
-.top{
+.top {
   margin-top: 0px;
 }
 
