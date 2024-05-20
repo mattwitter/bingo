@@ -49,7 +49,7 @@ export default {
 <style>
 @font-face {
   font-family: "Runescape UF";
-  src: url(https://github.com/runelite/runelite/blob/master/runelite-client/src/main/resources/net/runelite/client/ui/runescape.ttf) format("truetype");
+  src: url(https://fonts.cdnfonts.com/css/runescape-uf) format("truetype");
 }
 
 .runescape {
