@@ -1,7 +1,7 @@
 <template>
   <v-app style="background-color: black;">
     <v-container>
-      <v-col cols="12" style="background-color: black;">
+      <v-col xl="12" md="6" sm="3" style="background-color: black;">
         <div>
           <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
           <h1 class="runescape jumbo" style="text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Unmerged Bingo</h1>
@@ -81,18 +81,4 @@ export default {
   pointer-events: none;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  .jumbo {
-    font-size: 4rem; /* Adjust font size for smaller screens */
-  }
-  .runescape {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-  }
-  /* Adjust positioning for smaller screens */
-  .jumbo,
-  .runescape {
-    top: 50%;
-  }
-}
 </style>
