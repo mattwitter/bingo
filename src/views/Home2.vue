@@ -246,7 +246,7 @@ export default {
     tier4: false,
     tier5: false,
     tierMystery: false,
-    team1Score: 0,
+    team1Score: 1,
     team2Score: 5,
     team3Score: 0,
     team4Score: 0,
@@ -601,7 +601,7 @@ export default {
       completedTiles: [
         this.cudgel= false,
         this.runiteLimbs= false,
-        this.bracelet= false,
+        this.bracelet= true,
         this.fireCape= false,
         this.unsired= false,
         this.grotesqueGuardians= false,
