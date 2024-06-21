@@ -5,12 +5,12 @@
           <v-card class="card" @click="dialog1 = true">
             <v-img
               v-if="!completedTiles[0]"
-              src="../../assets/miilkers.png"
+              src="../../assets/cudgel.png"
             >
-          </v-img>
-          <v-img
+            </v-img>
+            <v-img
               v-if="completedTiles[0]"
-              src="../../assets/miilkersCompleted.png"
+              src="../../assets/cudgelCompleted.png"
             >
           </v-img>
           </v-card>
@@ -20,19 +20,20 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Uh Oh! Little lumbridge cow needs her milkers milkied! Watch out! Bring your whole team and screenshot one LUCKY team member getting that milky wilky and make sure everyone elses names are visible! One bonus point will be awarded to the team with the creamiest fashionscape!</h4>
+                <h4>Obtain a Cudgel from Sarachnis</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
+
           <v-card class="card" @click="dialog2 = true">
             <v-img
               v-if="!completedTiles[1]"
-              src="../../assets/lockpick.png"
+              src="../../assets/runiteLimbs.png"
             >
             </v-img>
             <v-img
               v-if="completedTiles[1]"
-              src="../../assets/lockpickCompleted.png"
+              src="../../assets/runiteLimbsCompleted.png"
             >
           </v-img>
           </v-card>
@@ -42,19 +43,20 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Strange Old Lockpick from the Hallowed Sepulchre</h4>
+                <h4>Obtain 3x runite limbs from Deranged archaeologist</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
+
           <v-card class="card" @click="dialog3 = true">
             <v-img
               v-if="!completedTiles[2]"
-              src="../../assets/thread.png"
+              src="../../assets/braceleteOfEthereum.png"
             >
             </v-img>
             <v-img
               v-if="completedTiles[2]"
-              src="../../assets/threadCompleted.png"
+              src="../../assets/braceleteOfEthereumCompleted.png"
             >
           </v-img>
           </v-card>
@@ -64,21 +66,22 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Thread of Elidinis from the Tombs of Amascut</h4>
+                <h4>Obtain 3 Bracelets of Ethereum from Revenants</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
+
           <v-card class="card" @click="dialog4 = true">
             <v-img
               v-if="!completedTiles[3]"
-              src="../../assets/pureEss.png"
+              src="../../assets/fireCape.png"
             >
             </v-img>
             <v-img
               v-if="completedTiles[3]"
-              src="../../assets/pureEssCompleted.png"
+              src="../../assets/fireCapeCompleted.png"
             >
-          </v-img>
+            </v-img>
           </v-card>
           <v-dialog
             v-model="dialog4"
@@ -86,54 +89,7 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Pure Essence drop of 1k OR MORE from Zalcano</h4>
-              </v-card-text>
-            </v-card>
-          </v-dialog>
-      </v-row>
-      <v-row>
-          <v-card class="card" @click="dialog5 = true">
-            <v-img
-              v-if="!completedTiles[4]"
-              src="../../assets/braceleteOfEthereum.png"
-            >
-            </v-img>
-            <v-img
-              v-if="completedTiles[4]"
-              src="../../assets/braceleteOfEthereumCompleted.png"
-            >
-          </v-img>
-          </v-card>
-          <v-dialog
-            v-model="dialog5"
-            width="500"
-          >
-            <v-card>
-              <v-card-text>
-                <h4>Obtain 3 Bracelets of Ethereum from Revenants</h4>
-              </v-card-text>
-            </v-card>
-          </v-dialog>
-
-          <v-card class="card" @click="dialog6 = true">
-            <v-img
-              v-if="!completedTiles[5]"
-              src="../../assets/fireCape.png"
-            >
-            </v-img>
-            <v-img
-              v-if="completedTiles[5]"
-              src="../../assets/fireCapeCompleted.png"
-            >
-            </v-img>
-          </v-card>
-          <v-dialog
-            v-model="dialog6"
-            width="500"
-          >
-            <v-card>
-              <v-card-text>
-                <h4>Complete the Fight Caves in under 38 Minutes</h4>
+                <h4>Complete the Fight Caves in under 37 Minutes</h4>
               </v-card-text>
             </v-card>
           </v-dialog>

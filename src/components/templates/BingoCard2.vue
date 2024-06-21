@@ -4,13 +4,13 @@
       <v-row>
           <v-card class="card" @click="dialog1 = true">
             <v-img 
-              v-if="!completedTiles[6]"
-              src="../../assets/gnomeScarf.png"
+              v-if="!completedTiles[4]"
+              src="../../assets/unsired.png"
             >
           </v-img>
           <v-img 
-              v-if="completedTiles[6]"
-              src="../../assets/gnomeScarfCompleted.png"
+              v-if="completedTiles[4]"
+              src="../../assets/unsiredCompleted.png"
             >
           </v-img>
           </v-card>
@@ -20,20 +20,20 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Gnome Scarf from the Gnome Restaurant Minigame</h4>
+                <h4>Obtain an Unsired from Abyssal Sire</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
 
           <v-card class="card" @click="dialog2 = true">
             <v-img
-            v-if="!completedTiles[7]"
-              src="../../assets/dragonMedHelm.png"
+            v-if="!completedTiles[5]"
+              src="../../assets/grotesqueGuardians.png"
             >
           </v-img>
           <v-img 
-              v-if="completedTiles[7]"
-              src="../../assets/dragonMedHelmCompleted.png"
+              v-if="completedTiles[5]"
+              src="../../assets/grotesqueGuardiansCompleted.png"
             >
           </v-img>
           </v-card>
@@ -43,20 +43,20 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Dragon Med Helm from Sarachnis</h4>
+                <h4>Obtain a Unique from the Grotesque Guardians (No Pet/Maul/Dust)</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
 
           <v-card class="card" @click="dialog3 = true">
             <v-img
-              v-if="!completedTiles[8]"
-              src="../../assets/mudStaffSeercull.png"
+              v-if="!completedTiles[6]"
+              src="../../assets/scurriusSpine.png"
             >
             </v-img>
             <v-img
-              v-if="completedTiles[8]"
-              src="../../assets/mudStaffSeercullCompleted.png"
+              v-if="completedTiles[6]"
+              src="../../assets/scurriusSpineCompleted.png"
             >
             </v-img>
           </v-card>
@@ -66,19 +66,19 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Mud Battlestaff AND a Seercull from Dagannoth Kings</h4>
+                <h4>Obtain 3x Scurrius Spine</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
 
           <v-card class="card" @click="dialog4 = true">
             <v-img
-              v-if="!completedTiles[9]"
+              v-if="!completedTiles[7]"
               src="../../assets/zenyte.png"
             >
           </v-img>
           <v-img
-              v-if="completedTiles[9]"
+              v-if="completedTiles[7]"
               src="../../assets/zenyteCompleted.png"
             >
           </v-img>
@@ -96,12 +96,12 @@
 
           <v-card class="card" @click="dialog5 = true">
             <v-img
-              v-if="!completedTiles[10]"
+              v-if="!completedTiles[8]"
               src="../../assets/venatorShard2.png"
             >
             </v-img>
             <v-img
-              v-if="completedTiles[10]"
+              v-if="completedTiles[8]"
               src="../../assets/venatorShardCompleted.png"
             >
             </v-img>
@@ -119,13 +119,13 @@
 
           <v-card class="card" @click="dialog6 = true">
             <v-img
-              v-if="!completedTiles[11]"
-              src="../../assets/dragonPickaxe.png"
+              v-if="!completedTiles[9]"
+              src="../../assets/cerbCrystals.png"
             >
             </v-img>
             <v-img
-              v-if="completedTiles[11]"
-              src="../../assets/dragonPickaxeCompleted.png"
+              v-if="completedTiles[9]"
+              src="../../assets/cerbCrystalsCompleted.png"
             >
             </v-img>
           </v-card>
@@ -135,20 +135,20 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain a Dragon Pickaxe (Not from Volanic Mine)</h4>
+                <h4>Obtain a crystal from Cerberus</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
 
           <v-card class="card" @click="dialog7 = true">
             <v-img
-              v-if="!completedTiles[12]"
-              src="../../assets/vorkathHead.png"
+              v-if="!completedTiles[10]"
+              src="../../assets/bloodShard.png"
             >
             </v-img>
             <v-img
-              v-if="completedTiles[12]"
-              src="../../assets/vorkathHeadCompleted.png"
+              v-if="completedTiles[10]"
+              src="../../assets/bloodShardCompleted.png"
             >
             </v-img>
           </v-card>
@@ -158,20 +158,20 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain 3x Vorkath Head</h4>
+                <h4>Obtain a Blood Shard</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
 
           <v-card class="card" @click="dialog8 = true">
             <v-img
-              v-if="!completedTiles[13]"
-              src="../../assets/saraSwordLight.png"
+              v-if="!completedTiles[11]"
+              src="../../assets/runeMedHelm.png"
             >
             </v-img>
             <v-img
-              v-if="completedTiles[13]"
-              src="../../assets/saraSwordLightCompleted.png"
+              v-if="completedTiles[11]"
+              src="../../assets/runeMedHelmCompleted.png"
             >
             </v-img>
           </v-card>
@@ -181,12 +181,12 @@
           >
             <v-card>
               <v-card-text>
-                <h4>Obtain 2x Saradomin Sword or Saradomin Light</h4>
+                <h4>Obtain 2x Rune Med Helm from Giant Mole</h4>
               </v-card-text>
             </v-card>
           </v-dialog>
-
-      </v-row>
+          
+        </v-row>
       <v-row>
       </v-row>
     </v-col>

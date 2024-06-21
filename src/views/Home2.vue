@@ -23,18 +23,18 @@
                 <v-card class="scroll">
                   <v-card-text>
                     <h2 class="pt-5" style="text-align: center; font-size: 3rem">Unmerged Bingo Rules</h2>
-                    <h4 class="pt-10 rules">1. Bingo Starts on 5/21/2023 at 12:00 AM EST</h4>
-                    <h4 class="pt-5 rules">2. You MUST complete Three Tier One tiles to unlock Tier Two, Two Tier Two tiles to unlock Tier Three, and One Tier Three tile to unlock Tier 4.  Any tiles completed in locked tiers 
-                      will not be acknowledged and must be completed again once the respective tier is unlocked.</h4>
-                    <h4 class="pt-5 rules">3. Barrows logs must be shared in your respective teams discord channels once bingo has begun.</h4>
-                    <h4 class="pt-5 rules">4. Make sure you have the "Clan Events" Plugin enabled with the Bingo Codeword and Date/Time Visible in all tile submissions.</h4>
-                    <h4 class="pt-5 rules">5. If you can not complete a tile on the account signed up and must complete on main, please make sure only one account is logged in at a time for the duration of bingo.
+                    <h4 class="pt-10 rules">1. Weekend Bingo starts 6/21/2024 05:00 PM EST and ends 6/23/2024 11:59 PM EST</h4>
+                    <h4 class="pt-5 rules">2. Make sure you have the "Clan Events" Plugin enabled with the Bingo Codeword and Date/Time Visible in all tile submissions.</h4>
+                    <h4 class="pt-5 rules">3. If you can not complete a tile on the account signed up and must complete on main, please make sure only one account is logged in at a time for the duration of bingo.
                       Players found logged into multiple accounts at once for the duration of bingo will be disqualified. 
                     </h4>
-                    <h4 class="pt-5 rules">6. Alts may be used to run supplies, but may not be used to aid in the completion of any tile for any reason (Tanking, Safespotting, etc.)</h4>
-                    <h4 class="pt-5 rules">7. Please turn untradeable drop notifications on and set your valuable drop notification threshold to very low.</h4>
-                    <h4 class="pt-5 rules">8. All drops must be submitted within one hour of receiving the drop (other than for the barrows tile), and that if your team captain is online they should approve your screenshot before you submit it.</h4>
-                    <h4 class="pt-5 rules">9. Any Players not actively participating in the event may be removed from the team at mods discretion.</h4>
+                    <h4 class="pt-5 rules">4. Alts may be used to run supplies, but may not be used to aid in the completion of any tile for any reason (Tanking, Safespotting, etc.)</h4>
+                    <h4 class="pt-5 rules">5. Please turn untradeable drop notifications on and set your valuable drop notification threshold to very low.</h4>
+                    <h4 class="pt-5 rules">6. All drops must be submitted within one hour of receiving the drop.</h4>
+                    <h4 class="pt-5 rules">7. Any Players not actively participating in the event may be removed from the team at mods discretion.</h4>
+                    <h4 class="pt-5 rules">8. You may store one CG chest prior to bingo to open right at bingo start</h4>
+                    <h4 class="pt-5 rules">9. No PKING or Ragging other bingo enjoyers</h4>
+                    <h4 class="pt-5 rules">10. <b>NO COMPLAINING ABOUT TILE SUBMISSIONS AT ALL. MODS WILL HANDLE THIS. YOU WILL BE KICKED FROM BINGO AND FORFEIT WINNINGS AND ENTRY FEE</b></h4>
                   </v-card-text>
                 </v-card>
               </v-dialog>
@@ -45,7 +45,7 @@
         <v-row>
           <v-col cols="12">
             <h2 class="mr-12 ml-n12 runescape jumbo" style="text-align: center; font-size: 3rem;">
-              Bingo Code: Milkers
+              Bingo Code: Absolut Pear
             </h2>
           </v-col>
         </v-row>
@@ -57,72 +57,43 @@
             <v-container class="">
             <v-expansion-panels class="runescape">
               <v-expansion-panel v-bind:disabled="disabled2 == 1 || disabled3 == 1 || disabled4 == 1" class="runescape" style="color: #ffff00; background-color: black; text-align: left;"  @click="changeOffDefaultBoard(team1), isTeam1Open()">
-                <v-expansion-panel-header class="runescape">
+                <v-expansion-panel-header class="runescape name">
                   {{ team1.team_name + ' - ' + team1Score}}
                   
                 </v-expansion-panel-header>
                 <v-expansion-panel-content
-                  v-for="(item,i) in 5"
+                  v-for="(item,i) in 8"
                   :key="i"
-                  class=""
+                  class="runescape name"
                 >
                  {{ team1.members[i] }}
                 </v-expansion-panel-content>
               </v-expansion-panel>
-            </v-expansion-panels>
 
-            <v-spacer></v-spacer>
-
-            <v-expansion-panels class="runescape">
-              <v-expansion-panel v-bind:disabled="disabled1 == 1 || disabled3 == 1 || disabled4 == 1" class="runescape" style="color: #ffff00; background-color: black; text-align: left;" @click="changeOffDefaultBoard(team2), isTeam2Open()">
-                <v-expansion-panel-header class="runescape">
+              <v-expansion-panel v-bind:disabled="disabled1 == 1 || disabled3 == 1 || disabled4 == 1" class="runescape" style="color: #ffff00; background-color: black; text-align: left;"  @click="changeOffDefaultBoard(team2), isTeam2Open()">
+                <v-expansion-panel-header class="runescape name">
                   {{ team2.team_name + ' - ' + team2Score}}
+                  
                 </v-expansion-panel-header>
                 <v-expansion-panel-content
-                  v-for="(item,i) in 5"
+                  v-for="(item,i) in 8"
                   :key="i"
-                  class=""
+                  class="runescape name"
                 >
                  {{ team2.members[i] }}
                 </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
 
+            <v-spacer></v-spacer>
+
           <v-spacer></v-spacer>
 
-            <v-expansion-panels class="runescape">
-              <v-expansion-panel v-bind:disabled="disabled1 == 1 || disabled2 == 1 || disabled4 == 1" class="runescape" style="color: #ffff00; background-color: black; text-align: left;"   @click="changeOffDefaultBoard(team3), isTeam3Open()">
-                <v-expansion-panel-header class="runescape">
-                  {{ team3.team_name + ' - ' + team3Score}}
-                </v-expansion-panel-header>
-                <v-expansion-panel-content
-                  v-for="(item,i) in 5"
-                  :key="i"
-                  class=""
-                >
-                 {{ team3.members[i] }}
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
+
           
           <v-spacer></v-spacer>
-
-            <v-expansion-panels class="runescape">
-              <v-expansion-panel v-bind:disabled="disabled1 == 1 || disabled2 == 1 || disabled3 == 1" class="runescape" style="color: #ffff00; background-color: black; text-align: left;"   @click="changeOffDefaultBoard(team4), isTeam4Open()">
-                <v-expansion-panel-header class="runescape">
-                  {{ team4.team_name + ' - ' + team4Score}}
-                </v-expansion-panel-header>
-                <v-expansion-panel-content
-                  v-for="(item,i) in 5"
-                  :key="i"
-                  class=""
-                >
-                {{ team4.members[i] }}
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
-            </v-container>
-            </v-col>
+        </v-container>
+        </v-col>
 
           <v-col cols="10">
               <v-app-bar
@@ -132,40 +103,58 @@
               class="ml-1"
             >
               <v-btn
-                width="25%"
+                width="20%"
                 class="mr-1 runescape" 
                 color="grey"
                 style="color:#ffff00;"
                 @click="showBoard('tier1')"
               >
-                Tier 1
+                1 Point
               </v-btn>
               <v-btn
-                width="25%"
+                width="20%"
                 class="mr-1 runescape" 
                 color="grey"
                 style="color:#ffff00;"
                 @click="showBoard('tier2')"
               >
-                Tier 2
+                2 Points
               </v-btn>
               <v-btn
-                width="25%"
+                width="20%"
                 class="mr-1 runescape" 
                 color="grey"
                 style="color:#ffff00;"
                 @click="showBoard('tier3')"
               >
-                Tier 3
+                5 Points
               </v-btn>
               <v-btn
-                width="25%"
+                width="20%"
                 class="mr-1 runescape" 
                 color="grey"
                 style="color:#ffff00;"
                 @click="showBoard('tier4')"
               >
-                Tier 4
+                8 Points
+              </v-btn>
+              <v-btn
+                width="20%"
+                class="mr-1 runescape" 
+                color="grey"
+                style="color:#ffff00;"
+                @click="showBoard('tier5')"
+              >
+                10 Points
+              </v-btn>
+              <v-btn
+                width="20%"
+                class="mr-1 runescape" 
+                color="grey"
+                style="color:#ffff00;"
+                @click="showBoard('tierMystery')"
+              >
+                ???
               </v-btn>
             </v-app-bar>
             <bingo-card-1
@@ -184,6 +173,14 @@
               v-if="defaultTier4"
               :completed-tiles="[]"
             ></bingo-card-4>
+            <bingo-card-5
+              v-if="defaultTier5"
+              :completed-tiles="[]"
+            ></bingo-card-5>
+            <mystery-card
+              v-if="defaultTierMystery"
+              :completed-tiles="[]"
+            ></mystery-card>
             <bingo-card-1
               v-if="tier1 && selected_team != null"
               :completed-tiles="selected_team.completedTiles"
@@ -200,6 +197,14 @@
               v-if="tier4 && selected_team != null"
               :completed-tiles="selected_team.completedTiles"
             ></bingo-card-4>
+            <bingo-card-5
+              v-if="tier5 && selected_team != null"
+              :completed-tiles="selected_team.completedTiles"
+            ></bingo-card-5>
+            <mystery-card
+              v-if="tierMystery && selected_team != null"
+              :completed-tiles="selected_team.completedTiles"
+            ></mystery-card>
           </v-col>
         </v-row>
       </v-container>
@@ -212,6 +217,8 @@ import BingoCard1 from '../components/templates/BingoCard1.vue'
 import BingoCard2 from '../components/templates/BingoCard2.vue'
 import BingoCard3 from '../components/templates/BingoCard3.vue'
 import BingoCard4 from '../components/templates/BingoCard4.vue'
+import BingoCard5 from '../components/templates/BingoCard5.vue'
+import MysteryCard from '../components/templates/MysteryCard.vue'
 
 export default {
   name: 'Home',
@@ -220,6 +227,8 @@ export default {
     BingoCard2,
     BingoCard3,
     BingoCard4,
+    BingoCard5,
+    MysteryCard
   },
 
   data: () => ({
@@ -229,14 +238,18 @@ export default {
     defaultTier2: false,
     defaultTier3: false,
     defaultTier4: false,
+    defaultTier5: false,
+    defaultTierMystery: false,
     tier1: false,
     tier2: false,
     tier3: false,
     tier4: false,
-    team1Score: 61,
-    team2Score: 57,
-    team3Score: 51,
-    team4Score: 66,
+    tier5: false,
+    tierMystery: false,
+    team1Score: 0,
+    team2Score: 0,
+    team3Score: 0,
+    team4Score: 0,
 
     disabled1: 0,
     disabled2: 0,
@@ -247,40 +260,37 @@ export default {
 
     completedTiles: null,
 
-    mystery: false,
-    lockpick: false,
-    thread: false,
-    pureEss: false,
+    mystery1: false,
+    mystery2: false,
+    mystery3: false,
+    mystery4: false,
+    cudgel: false,
+    runiteLimbs: false,
     bracelet: false,
     fireCape: false,
-    gnomeScarf: false,
-    dragonMed: false,
-    seerCull: false,
+    unsired: false,
+    grotesqueGuardians: false,
+    scurriusSpine: false,
     zenyte: false,
     venator: false,
-    dpick: false,
-    vorkathHead: false,
-    saraSwordLight: false,
+    cerberusCrystals: false,
+    bloodShard: false,
+    runeMedHelm: false,
     zulrah: false,
     odiumMalediction: false,
-    wardRing: false,
+    dt2: false,
     crystalSeed: false,
-    coxPrayer: false,
-    holyElixir: false,
-    zammy: false,
-    bandosArmaArmour: false,
-    gwdHilt: false,
-    barrows: false,
-    acb: false,
-    bloodShard: false,
-    masori: false,
-    voidwaker: false,
+    whipTrident: false,
+    gwdArmor: false,
+    gwdWeapon: false,
+    sceptre: false,
+    crystalToolSeed: false,
+    smokeBattlestaff: false,
+    raidsPurp: false,
     nightmare: false,
     nex: false,
     corpSigil: false,
-    coxPurple: false,
-    tobPurple: false,
-    revWeapon: false,
+    megaRare: false,
     
     selected_team: null
   }),
@@ -300,7 +310,6 @@ export default {
         }
       }
     }*/
-
     isTeam1Open() {
       if (this.disabled1 == 0)
       {
@@ -312,7 +321,9 @@ export default {
         this.tier1 = false,
         this.tier2 = false,
         this.tier3 = false,
-        this.tier4 = false
+        this.tier4 = false,
+        this.tier5 = false,
+        this.tierMystery = false
       }
     },
 
@@ -327,7 +338,9 @@ export default {
         this.tier1 = false,
         this.tier2 = false,
         this.tier3 = false,
-        this.tier4 = false
+        this.tier4 = false,
+        this.tier5 = false,
+        this.tierMystery = false
       }
     },
 
@@ -342,7 +355,9 @@ export default {
         this.tier1 = false,
         this.tier2 = false,
         this.tier3 = false,
-        this.tier4 = false
+        this.tier4 = false,
+        this.tier5 = false,
+        this.tierMystery = false
       }
     },
 
@@ -357,7 +372,9 @@ export default {
         this.tier1 = false,
         this.tier2 = false,
         this.tier3 = false,
-        this.tier4 = false
+        this.tier4 = false,
+        this.tier5 = false,
+        this.tierMystery = false
       }
     },
 
@@ -370,6 +387,8 @@ export default {
         this.defaultTier2 = false
         this.defaultTier3 = false
         this.defaultTier4 = false
+        this.defaultTier5 = false
+        this.defaultTierMystery = false
         this.selected_team = team
       }
       else if (this.defaultTier2 == true)
@@ -379,6 +398,8 @@ export default {
         this.defaultTier2 = false
         this.defaultTier3 = false
         this.defaultTier4 = false
+        this.defaultTier5 = false
+        this.defaultTierMystery = false
         this.selected_team = team
       }
       else if (this.defaultTier3 == true)
@@ -388,6 +409,8 @@ export default {
         this.defaultTier2 = false
         this.defaultTier3 = false
         this.defaultTier4 = false
+        this.defaultTier5 = false
+        this.defaultTierMystery = false
         this.selected_team = team
       }
       else if (this.defaultTier4 == true)
@@ -397,6 +420,30 @@ export default {
         this.defaultTier2 = false
         this.defaultTier3 = false
         this.defaultTier4 = false
+        this.defaultTier5 = false
+        this.defaultTierMystery = false
+        this.selected_team = team
+      }
+      else if (this.defaultTier5 == true)
+      {
+        this.tier5 = true
+        this.defaultTier = false
+        this.defaultTier2 = false
+        this.defaultTier3 = false
+        this.defaultTier4 = false
+        this.defaultTier5 = false
+        this.defaultTierMystery = false
+        this.selected_team = team
+      }
+      else if (this.defaultTierMystery == true)
+      {
+        this.tierMystery = true
+        this.defaultTier = false
+        this.defaultTier2 = false
+        this.defaultTier3 = false
+        this.defaultTier4 = false
+        this.defaultTier5 = false
+        this.defaultTierMystery = false
         this.selected_team = team
       }
       else
@@ -414,13 +461,17 @@ export default {
         this.defaultTier2 = false
         this.defaultTier3 = false
         this.defaultTier4 = false
-
+        this.defaultTier5 = false
+        this.defaultTierMystery = false
+        
         if (tier == "tier1" && this.selected_team != null)
         {
           this.tier1 = true
           this.tier2 = false
           this.tier3 = false
           this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
         }
         if (tier == "tier1" && this.selected_team == null)
         {
@@ -429,6 +480,8 @@ export default {
           this.tier2 = false
           this.tier3 = false
           this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
         }
         if (tier == "tier2" && this.selected_team == null)
         {
@@ -437,6 +490,8 @@ export default {
           this.tier2 = false
           this.tier3 = false
           this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
         }
         if (tier == "tier2" && this.selected_team != null)
         {
@@ -444,6 +499,8 @@ export default {
           this.tier2 = true 
           this.tier3 = false
           this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
         }
         if (tier == "tier3" && this.selected_team == null)
         {
@@ -452,6 +509,8 @@ export default {
           this.tier2 = false
           this.tier3 = false
           this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
         }
         if (tier == "tier3" && this.selected_team != null)
         {
@@ -459,6 +518,8 @@ export default {
           this.tier2 = false
           this.tier3 = true
           this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
         }
         if (tier == "tier4" && this.selected_team == null)
         {
@@ -467,6 +528,8 @@ export default {
           this.tier2 = false
           this.tier3 = false
           this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
         }
         if (tier == "tier4" && this.selected_team != null)
         {
@@ -474,6 +537,46 @@ export default {
           this.tier2 = false
           this.tier3 = false
           this.tier4 = true
+          this.tier5 = false
+          this.tierMystery = false
+        }
+        if (tier == "tier5" && this.selected_team == null)
+        {
+          this.defaultTier5 = true
+          this.tier1 = false
+          this.tier2 = false
+          this.tier3 = false
+          this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
+        }
+        if (tier == "tier5" && this.selected_team != null)
+        {
+          this.tier1 = false
+          this.tier2 = false
+          this.tier3 = false
+          this.tier4 = false
+          this.tier5 = true
+          this.tierMystery = false
+        }
+        if (tier == "tierMystery" && this.selected_team == null)
+        {
+          this.defaultTierMystery = true
+          this.tier1 = false
+          this.tier2 = false
+          this.tier3 = false
+          this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = false
+        }
+        if (tier == "tierMystery" && this.selected_team != null)
+        {
+          this.tier1 = false
+          this.tier2 = false
+          this.tier3 = false
+          this.tier4 = false
+          this.tier5 = false
+          this.tierMystery = true
         }
       }
       else
@@ -483,34 +586,87 @@ export default {
         this.tier2 = false
         this.tier3 = false
         this.tier4 = false
+        this.tier5 = false
+        this.tierMystery = false
       }
     }
   },
 
   created() {
    //this.showTeamBoard()
+
    this.team1 = {
-      team_name: "Nieve's Naughty Boys",
-      members: ["B1G J0HN", "Miilky", "Ya_Boy_Pappy", "He was NR1", "PapaPink"],
-      completedTiles: [this.mystery = true, this.lockpick = true, this.thread = true, this.pureEss = this, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = true, this.seerCull = true, this.zenyte = false, this.venator = true, this.dpick = false, this.vorkathHead = true, this.saraSwordLight = false, this.zulrah = true, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = true, this.coxPrayer = true, this.holyElixir = false, this.zammy = true, this.bandosArmaArmour = true, this.gwdHilt = false, this.barrows = true, this.acb = true, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
+      team_name: "Gielinor's Gaggers",
+      members: ["Miilky", "Thicc Six", "IM B1G J0HN", "Dacoyda", "Glizzy", "JoeyFool", "PapaPink", "CanceIIed"],
+      completedTiles: [
+        this.cudgel= false,
+        this.runiteLimbs= false,
+        this.bracelet= false,
+        this.fireCape= false,
+        this.unsired= false,
+        this.grotesqueGuardians= false,
+        this.scurriusSpine= false,
+        this.zenyte= false,
+        this.venator= false,
+        this.cerberusCrystals= false,
+        this.bloodShard= false,
+        this.runeMedHelm= false,
+        this.zulrah= false,
+        this.odiumMalediction= false,
+        this.dt2= false,
+        this.crystalSeed= false,
+        this.whipTrident= false,
+        this.gwdArmor= false,
+        this.gwdWeapon= false,
+        this.sceptre= false,
+        this.crystalToolSeed= false,
+        this.smokeBattlestaff= false,
+        this.raidsPurp= false,
+        this.nightmare= false,
+        this.nex= false,
+        this.corpSigil= false,
+        this.megaRare= false,
+        this.mystery1 = false,
+        this.mystery2= false,
+        this.mystery3= false,
+        this.mystery4= false ]
     },
-    
+
     this.team2 = {
-      team_name: "DASG Whorehouse",
-      members: [":Dacoyda:", "Thicc Six", "Renting a gf", "HighAlchemist", "l glizzy l"],
-      completedTiles: [this.mystery = true, this.lockpick = true, this.thread = false, this.pureEss = true, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = true, this.seerCull = true, this.zenyte = true, this.venator = false, this.dpick = true, this.vorkathHead = true, this.saraSwordLight = true, this.zulrah = false, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = false, this.coxPrayer = false, this.holyElixir = false, this.zammy = true, this.bandosArmaArmour = true, this.gwdHilt = true, this.barrows = true, this.acb = false, this.bloodShard = true, this.masori = true, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
-    },
-
-    this.team3 = {
-      team_name: "Existential Confirmation",
-      members: ["Dun", "Britster34", "Lossow", "I am budcode", "Wake"],
-      completedTiles: [this.mystery = false, this.lockpick = true, this.thread = false, this.pureEss = true, this.bracelet = true, this.fireCape = true, this.gnomeScarf = true, this.dragonMed = true, this.seerCull = true, this.zenyte = false, this.venator = false, this.dpick = true, this.vorkathHead = true, this.saraSwordLight = true, this.zulrah = true, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = true, this.coxPrayer = false, this.holyElixir = true, this.zammy = false, this.bandosArmaArmour = false, this.gwdHilt = true, this.barrows = true, this.acb = false, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = false, this.tobPurple = false, this.revWeapon = false ]
-    },
-
-    this.team4 = {
-      team_name: "Thurgo's Thotties",
-      members: ["Bridgebon", "Gamer fuel", "Sycrem", "Are Dry"],
-      completedTiles: [this.mystery = true, this.lockpick = false, this.thread = true, this.pureEss = true, this.bracelet = true, this.fireCape = true, this.gnomeScarf = false, this.dragonMed = true, this.seerCull = false, this.zenyte = true, this.venator = true, this.dpick = true, this.vorkathHead = false, this.saraSwordLight = true, this.zulrah = true, this.odiumMalediction = true, this.wardRing = false, this.crystalSeed = true, this.coxPrayer = true, this.holyElixir = false, this.zammy = false, this.bandosArmaArmour = true, this.gwdHilt = false, this.barrows = true, this.acb = false, this.bloodShard = true, this.masori = false, this.voidwaker = false, this.nightmare = false, this.nex = false, this.corpSigil = false, this.coxPurple = true, this.tobPurple = true, this.revWeapon = false ]
+      team_name: "Blasted Baddies",
+      members: ["Bridgebon", "Gamer Fuel", "Renting a gf", "Dunnsterin", "FlannL", "KitsuneWife", "Prey", "Saiyanwho"  ],
+      completedTiles: [ 
+        this.cudgel= false,
+        this.runiteLimbs= false,
+        this.bracelet= false,
+        this.fireCape= false,
+        this.unsired= false,
+        this.grotesqueGuardians= false,
+        this.scurriusSpine= false,
+        this.zenyte= false,
+        this.venator= false,
+        this.cerberusCrystals= false,
+        this.bloodShard= false,
+        this.runeMedHelm= false,
+        this.zulrah= false,
+        this.odiumMalediction= false,
+        this.dt2= false,
+        this.crystalSeed= false,
+        this.whipTrident= false,
+        this.gwdArmor= false,
+        this.gwdWeapon= false,
+        this.sceptre= false,
+        this.crystalToolSeed= false,
+        this.smokeBattlestaff= false,
+        this.raidsPurp= false,
+        this.nightmare= false,
+        this.nex= false,
+        this.corpSigil= false,
+        this.megaRare= true,
+        this.mystery1 = false,
+        this.mystery2= false,
+        this.mystery3= false,
+        this.mystery4= false ]
     }
   }
 }
@@ -539,7 +695,9 @@ export default {
   font-weight: 500;
 }
 
-.teamname {
+.name {
   font-size: 2rem;
+  line-height: 1.02;
+  font-weight: 500;
 }
 </style>
