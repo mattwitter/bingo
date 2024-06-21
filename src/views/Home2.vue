@@ -657,7 +657,7 @@ export default {
         this.gwdWeapon= false,
         this.sceptre= false,
         this.crystalToolSeed= false,
-        this.smokeBattlestaff= false,
+        this.smokeBattlestaff= true,
         this.raidsPurp= false,
         this.nightmare= false,
         this.nex= false,
