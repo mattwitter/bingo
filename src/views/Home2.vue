@@ -247,7 +247,7 @@ export default {
     tier5: false,
     tierMystery: false,
     team1Score: 30,
-    team2Score: 12,
+    team2Score: 17,
     team3Score: 0,
     team4Score: 0,
 
@@ -653,7 +653,7 @@ export default {
         this.dt2= false,
         this.crystalSeed= false,
         this.whipTrident= false,
-        this.gwdArmor= false,
+        this.gwdArmor= true,
         this.gwdWeapon= false,
         this.sceptre= false,
         this.crystalToolSeed= false,
