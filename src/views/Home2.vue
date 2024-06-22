@@ -246,7 +246,7 @@ export default {
     tier4: false,
     tier5: false,
     tierMystery: false,
-    team1Score: 37,
+    team1Score: 38,
     team2Score: 31,
     team3Score: 0,
     team4Score: 0,
@@ -627,7 +627,7 @@ export default {
         this.corpSigil= false,
         this.megaRare= false,
         this.mystery1 = false,
-        this.mystery2= false,
+        this.mystery2= true,
         this.mystery3= true,
         this.mystery4= true ]
     },
