@@ -246,7 +246,7 @@ export default {
     tier4: false,
     tier5: false,
     tierMystery: false,
-    team1Score: 25,
+    team1Score: 30,
     team2Score: 12,
     team3Score: 0,
     team4Score: 0,
