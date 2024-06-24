@@ -246,7 +246,7 @@ export default {
     tier4: false,
     tier5: false,
     tierMystery: false,
-    team1Score: 90,
+    team1Score: 91,
     team2Score: 91,
     team3Score: 0,
     team4Score: 0,
@@ -599,7 +599,7 @@ export default {
       team_name: "Gielinor's Gaggers",
       members: ["Miilky", "Thicc Six", "IM B1G J0HN", "Dacoyda", "Glizzy", "JoeyFool", "PapaPink", "CanceIIed"],
       completedTiles: [
-        this.cudgel= false,
+        this.cudgel= true,
         this.runiteLimbs= true,
         this.bracelet= true,
         this.fireCape= true,
