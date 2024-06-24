@@ -80,7 +80,7 @@
             </v-img>
             <v-img
               v-if="completedTiles[25]"
-              src="../../assets/sigils.png"
+              src="../../assets/sigilsCompleted.png"
             >
             </v-img>
           </v-card>
