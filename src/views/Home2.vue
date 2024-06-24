@@ -673,6 +673,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'Runescape UF';
+  src: url('../assets/fonts/runescape.ttf') format('truetype');
+}
+
 .runescape {
   font-family: 'RuneScape UF';
   color: #ffff00;
