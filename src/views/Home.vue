@@ -4,9 +4,8 @@
       <v-col xl="12" md="6" sm="3" style="background-color: black;">
         <div class="content">
           <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
-          <h1 class="runescape jumbo" style="text-align: center;">Unmerged Bingo</h1>
-          <h2 class="runescape jumbo subtitle" style="text-align: center;">June 21st - June 23rd</h2>
-          <h3 class="runescape" style="text-align: center;">5:00 PM EST - 11:59 PM EST</h3>
+          <h1 class="runescape jumbo" style="text-align: center;">GIELINOR'S GAGGERS WIN!!!</h1>
+          
         </div>
       </v-col>
     </v-container>
@@ -21,7 +20,7 @@ export default {
   components: {},
   data: () => ({}),
   mounted() {
-    //this.triggerConfetti();
+    this.triggerConfetti();
   },
   methods: {
     triggerConfetti() {
