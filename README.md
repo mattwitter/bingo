@@ -1,4 +1,4 @@
-# bingo
+# bingo (THIS CODE SUCKS QUICK PROJ FOR WEEKEND EVENT)
 
 ## Project setup
 ```
